@@ -30,4 +30,20 @@
     border-radius: 20px;
     border: 2px solid black;
     box-shadow: 4px 8px 8px var(--text);
+    text-align: center;
+}
+
+.todo-header{
+    color: var(--text);
+    text-decoration: wavy var(--secondary) underline;
+    margin-bottom: 1.2rem;
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.todo-img{
+    width: 40px;
 }
