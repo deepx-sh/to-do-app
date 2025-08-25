@@ -31,8 +31,19 @@
     border: 2px solid black;
     box-shadow: 4px 8px 8px var(--text);
     text-align: center;
+    animation: initAnim 1s ease-in 0s;
 }
 
+@keyframes initAnim {
+    0%{
+        opacity: 0;
+        transform: translateY(-120px);
+    }  
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    } 
+}
 .todo-header{
     color: var(--text);
     text-decoration: wavy var(--secondary) underline;
