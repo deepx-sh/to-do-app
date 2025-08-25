@@ -2,5 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Inter",sans-serif;
+    font-family: "Nunito", sans-serif;
+}
+
+:root{
+    --primary:#4CAF50;
+    --secondary:#FF9800;
+    --bg:#F9FAFB;
+    --card:#FFFFFF;
+    --text:#212529;
+    --text-muted:#6C757D;
 }
