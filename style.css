@@ -13,3 +13,10 @@
     --text:#212529;
     --text-muted:#6C757D;
 }
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--bg);
+    padding: 0.7rem;
+}
