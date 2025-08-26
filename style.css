@@ -57,4 +57,9 @@
 
 .todo-img{
     width: 40px;
+    transition: all 1s ease-in;
+}
+
+.todo-img:hover{
+    transform: rotate(360deg);
 }
