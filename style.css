@@ -63,3 +63,44 @@
 .todo-img:hover{
     transform: rotate(360deg);
 }
+
+/* Input Container */
+
+.input-container{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 1.2rem;
+    margin-bottom: 1.2rem;
+}
+
+.input-box{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent ;
+    padding: 1rem;
+    font-size: 1rem;
+    font-family: 500;
+}
+
+.input-container button{
+    border: none;
+    outline: none;
+    padding: 1.1rem;
+    border-radius: 30px;
+    background-color: var(--primary);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.add-icon{
+    font-size: 1.2rem;
+}
+
+button:hover{
+    background-color: #0b680ea5;
+}
