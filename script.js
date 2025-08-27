@@ -13,4 +13,5 @@ addBtn.addEventListener("click", () => {
         li.textContent = ip.value;
         listContainer.appendChild(li);
     }
+    ip.value = '';
 })
