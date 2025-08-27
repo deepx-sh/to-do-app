@@ -30,7 +30,7 @@
     border-radius: 20px;
     border: 2px solid black;
     box-shadow: 4px 8px 8px var(--text);
-    text-align: center;
+    /* text-align: center; */
     animation: initAnim 1s ease-in 0s;
 }
 
@@ -104,3 +104,27 @@
 button:hover{
     background-color: #0b680ea5;
 }
+
+.list-container li{
+    list-style: none;
+    font-size: 1rem;
+    padding: 15px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    
+}
+
+.list-container li::before{
+    content: '';
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-image: url(assets/radio.png);
+    background-position: center;
+    background-size: cover;
+    top: 12px;
+    left: 8px;
+}
+
