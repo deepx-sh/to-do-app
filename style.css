@@ -128,3 +128,11 @@ button:hover{
     left: 8px;
 }
 
+.checked{
+    color: var(--text-muted);
+    text-decoration: line-through;
+}
+
+.list-container li.checked::before{
+    background-image: url(assets/check.png);
+}
