@@ -12,6 +12,9 @@ addBtn.addEventListener("click", () => {
         let li = document.createElement("li");
         li.textContent = ip.value;
         listContainer.appendChild(li);
+        let delBtn = document.createElement("button");
+        delBtn.innerHTML = '<i class="fa-solid fa-trash"></i>';
+        li.appendChild(delBtn);
     }
     ip.value = '';
 })
