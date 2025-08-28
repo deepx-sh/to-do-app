@@ -92,7 +92,7 @@
     outline: none;
     padding: 1.1rem;
     border-radius: 30px;
-    background-color: var(--primary);
+    background-color: #007bff;
     cursor: pointer;
     transition: all 0.3s;
 }
@@ -102,7 +102,7 @@
 }
 
 button:hover{
-    background-color: #0b680ea5;
+    background-color: #0056b3;
 }
 
 .list-container li{
@@ -146,7 +146,12 @@ li button{
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: red;
+    background-color: #dc3545;
+}
+
+li button:hover{
+    cursor: pointer;
+    background-color: #c82333;
 }
 li button i{
     font-size: 1rem;
