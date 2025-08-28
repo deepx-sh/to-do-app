@@ -17,7 +17,7 @@
 .container{
     width: 100%;
     min-height: 100vh;
-    background-color: var(--bg);
+    background: linear-gradient(135deg, #f9fafb, #f1f3f6);
     padding: 0.7rem;
 }
 
@@ -113,7 +113,14 @@ button:hover{
     user-select: none;
     cursor: pointer;
     position: relative;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    animation: fadeInTask 0.3s ease;
     
+}
+
+.list-container li:hover{
+    transform: translateX(5px) scale(1.02);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
 .list-container li::before{
@@ -160,4 +167,26 @@ li button:hover{
 }
 li button i{
     font-size: 1rem;
+}
+
+@keyframes fadeInTask {
+    from{
+        opacity: 0;
+        transform: translateY(8px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeOutTask {
+    from{
+        opacity: 1;
+        transform: translateX(0);
+    }
+    to{
+        opacity: 0;
+        transform: translateX(50px);
+    }
 }

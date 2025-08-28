@@ -26,8 +26,12 @@ listContainer.addEventListener("click", (e) => {
         storeToStorage();
     } else if (e.target.tagName === "BUTTON" || e.target.parentElement.tagName==="BUTTON") {
         const li = e.target.closest("li");
-        li.remove();
+        li.style.animation = "fadeOutTask 0.3s ease forwards";
+        
+        li.addEventListener("animationend", () => {
+            li.remove();
         storeToStorage();
+       })
     }
     
 })
