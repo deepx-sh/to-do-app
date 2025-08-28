@@ -20,6 +20,11 @@ addBtn.addEventListener("click", () => {
     ip.value = '';
 });
 
+ip.addEventListener("keypress", (e) => {
+    if (e.key === "Enter") {
+        addBtn.click();
+    }
+})
 listContainer.addEventListener("click", (e) => {
     if (e.target.tagName === "LI") {
         e.target.classList.toggle("checked");
