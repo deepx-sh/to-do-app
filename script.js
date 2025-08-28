@@ -4,7 +4,7 @@ let listContainer = document.querySelector(".list-container");
 let addBtn = document.querySelector(".addBtn");
 
 addBtn.addEventListener("click", () => {
-    if (ip.value === '') {
+    if (ip.value === '' || ip.value.trim()==='') {
         alert("You must write something!");
         return;
     }
@@ -17,4 +17,14 @@ addBtn.addEventListener("click", () => {
         li.appendChild(delBtn);
     }
     ip.value = '';
+});
+
+listContainer.addEventListener("click", (e) => {
+    if (e.target.tagName === "LI") {
+        e.target.classList.toggle("checked")
+    } else if (e.target.tagName === "BUTTON" || e.target.parentElement.tagName==="BUTTON") {
+        const li = e.target.closest("li");
+        li.remove();
+    }
+    
 })
